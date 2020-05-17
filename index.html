@@ -1,0 +1,62 @@
+<div class="container">
+
+  <header>
+  <h1 id="title">Independent Contractor's Form</h1>
+  <p id="description">Please fill out the following form</p>
+</header>
+
+<form id="survey-form">
+  <label id="name-label" for="name">Name</label>
+  <input type="text" id="name" name="fullname" placeholder="Enter Your Full Name" required></input>
+  
+  <label id="email-label" for="email">Email</label>
+  <input type="email" id="email" name="email" placeholder="abcd@email.com" required></input>
+  
+  <label id="tel-label" for="tel" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>Phone Number</label>
+  <input type="tel" placeholder="555-555-5555" id="tel" name="telephone"></input>
+  <label id="number-label" for="name">Years of experience<label>
+  <input type="number" id="number" name="name" placeholder="Enter your experience" min="0" max="10"></input>  <!--No under 18 age-->
+  <label id="dropdown">What is your preferred area to travel:</label><!--dropdown-->
+    <select id="bayarea" name="bayarea">
+      <option value="selection">Please select</option>
+      <option value="Alameda">Alameda County</option>
+      <option value="contracosta">Contra Costa</option>
+      <option value="SF">San Francisco</option>
+      <option value="peninsula">Peninsula</option>
+      <option value="sanjose">San Jose</option>
+      <option value="fremont">Fremont area</option>
+    </select>
+  
+  
+  <legend>Do you have a Commercial Cleaning Business Licence:</legend><!--Radio buttons-->
+    
+    <fieldset>
+      <label for="yes-choice"> 
+      <input type="radio" id="yes-choice" name="yesno-choice">Yes 
+      </label>
+      <label for="no-choice"> 
+      <input type="radio" id="no-choice" name="yesno-choice">No 
+      </label>
+  </fieldset>
+   <legend>Do you have a Commercial Liability Insurance:</legend><!--Radio buttons-->
+   <fieldset>
+      <label for="yes-answer"> 
+      <input type="radio" id="yes-answer" name="yesno-answer">Yes 
+      </label>
+      <label for="no-answer"> 
+      <input type="radio" id="no-answer" name="yesno-answer">No 
+      </label>
+  </fieldset> 
+  <legend>What type of equipment do you have?</legend><!--checkboxes-->
+  <label for="vacuum"><input id="vacuum" type="checkbox" name="equipment">Vacuum Cleaner</label>
+  <label for="carpet"><input id="carpet" type="checkbox" name="equipment">Carpet Cleaner</label>
+  <label for="strip"><input id="strip" type="checkbox" name="equipment">Stripper and Waxer</label>
+  <label for="vehicle"><input id="vehicle" type="checkbox" name="equipment">Vehicle</label>
+  <label for="vacuum"><input id="vacuum" type="checkbox" name="equipment">Other</label>  
+  <legend>Additional Comments</legend><!--Additional comments-->
+    <textarea placeholder="Please share any comments"></textarea>
+  <button id="submit">Submit</submit>
+      
+</form>
+  
+</div>
