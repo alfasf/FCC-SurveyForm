@@ -7,7 +7,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A Google Home Replica</title>
+    <title>FCC-Building A Survery Form</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
@@ -42,6 +42,7 @@
         <option value="fremont">Fremont area</option>
       </select>
     
+    <div class="comments"></div>
     
     <legend>Do you have a Commercial Cleaning Business Licence:</legend><!--Radio buttons-->
       
@@ -52,6 +53,7 @@
         <label for="no-choice"> 
         <input type="radio" id="no-choice" name="yesno-choice">No 
         </label>
+        
     </fieldset>
      <legend>Do you have a Commercial Liability Insurance:</legend><!--Radio buttons-->
      <fieldset>
@@ -62,12 +64,18 @@
         <input type="radio" id="no-answer" name="yesno-answer">No 
         </label>
     </fieldset> 
+    
+    <div class="comments"></div>
+    
     <legend>What type of equipment do you have?</legend><!--checkboxes-->
     <label for="vacuum"><input id="vacuum" type="checkbox" name="equipment">Vacuum Cleaner</label>
     <label for="carpet"><input id="carpet" type="checkbox" name="equipment">Carpet Cleaner</label>
     <label for="strip"><input id="strip" type="checkbox" name="equipment">Stripper and Waxer</label>
     <label for="vehicle"><input id="vehicle" type="checkbox" name="equipment">Vehicle</label>
     <label for="vacuum"><input id="vacuum" type="checkbox" name="equipment">Other</label>  
+    
+    <div class="comments"></div>
+    
     <legend>Additional Comments</legend><!--Additional comments-->
       <textarea placeholder="Please share any comments"></textarea>
     <button id="submit">Submit</submit>

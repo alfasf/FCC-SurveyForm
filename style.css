@@ -88,6 +88,18 @@ button:hover{
   transform: scale(1.05);
 }
 
+
+.comments{
+  width: 85%;
+  margin: 20px auto 20px 0;
+  border-bottom: 3px dotted gray;
+}
+
+.comments::after{
+  content: "";
+}
+
+
 textarea{
   background-color: rgba(215, 215, 193, 0.75);
   font-size: 1.2em;
