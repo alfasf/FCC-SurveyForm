@@ -1,0 +1,112 @@
+
+body{
+  box-sizing: border-box;
+  background-image: linear-gradient(45deg, 
+    rgba(152,251,152, 0.7),
+    rgba(154,205,50, 0.4));
+  font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif; 
+
+}
+
+.container{
+  max-width: 450px;
+  margin: auto;
+}
+
+#title{
+  font-family: Tahoma,Verdana,Segoe,sans-serif;
+  font-size: 1.6em;
+  
+}
+
+p{
+  font-size: 1.25em;
+  text-align: center;
+}
+
+form{
+  background: rgba(105,107,47, 0.2);
+  padding: 10px; 
+
+}
+
+label, legend{
+  font-size: 1em;
+  margin: 5px 0 5px 0;
+}
+
+label{
+  display: block;
+  text-align: left;
+}
+
+fieldset{
+  border: 0;
+}
+
+fieldset label{
+  display: inline-block;
+  margin-right: 15px;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], input[type="number"], select{
+  width: 80%;
+  font-size: 0.96em;
+  margin: 2px 0 5px 0;
+  padding: 3px 0 5px 5px;
+  color: #333333;
+  background-color: #d7d7c1; /*transparent*/
+  border: none;
+  border-bottom: solid 1px #4DB6AC;
+  box-shadow: 1px 1px 10px 1px;
+}
+
+input:focus::placeholder {
+  color: transparent;
+}
+
+input[type="radio"]{
+  margin-left: -12px;
+}
+
+
+button{
+  max-width: 25%;
+  width: 100%;
+  margin-top: 5px;
+  padding: 5px;
+  background-color: rgba(134, 179, 0, 0.75);
+  border: 1px solid rgba(134, 179, 0, 1);
+  border-radius: 15%;
+  font-size: 1em;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+button:hover{
+  background-color: rgba(134, 179, 0, 0.95);
+  transform: scale(1.05);
+}
+
+textarea{
+  background-color: rgba(215, 215, 193, 0.75);
+  font-size: 1.2em;
+  color: #333333;
+  margin: auto;
+  padding-top: 5px;
+  box-shadow: 1px 1px 15px 5px rgba(105,107,47, 0.2);
+  width: 100%;
+  height: 150px;
+  outline: none;
+  resize: vertical;
+}
+
+textarea::placeholder{
+  font-size: 1.1em;
+  padding-left: 5px;
+  color: gray;
+}
+
+textarea:focus::placeholder {
+  color: transparent;
+}
